@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center px-[276px] py-[32px] bg-[#F5F7FA]">
-        <h1 className="text-[#263238] text-[64px] leading-[76px] font-semibold text-center">
+        <h1 className="text-[#263238] text-[48px] md:text-[64px] leading-[76px] font-semibold text-center">
           Pellentesque suscipit <br />
           fringilla libero eu.
         </h1>
@@ -13,8 +13,8 @@ const Footer = () => {
           Get a Demo -&gt;
         </button>
       </div>
-      <div className="flex bg-[#263238] w-full max-h-[328px] px-[165px] py-[64px] space-x-[125px] justify-between">
-        <div>
+      <div className="flex flex-col md:flex-row bg-[#263238] w-full h-full px-[165px] py-[64px] space-x-[125px] justify-between items-center">
+        <div className="">
           <Image
             src="/footerlogo.svg"
             width={191}
@@ -25,7 +25,7 @@ const Footer = () => {
             <p>Copyright © 2020 Nexcent ltd.</p>
             <p className="mt-[8px]">All rights reserved</p>
           </div>
-          <div className="flex gap-x-4 mt-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-0 md:gap-x-4 mt-10 items-center">
             <Image
               src="/icon/instagram.svg"
               width={32}
@@ -37,7 +37,7 @@ const Footer = () => {
             <Image src="/icon/youtube.svg" width={32} height={32} alt="Icon" />
           </div>
         </div>
-        <div className="flex gap-x-[30px]">
+        <div className="flex flex-col md:flex-row mt-12 md:mt-0 gap-x-[30px]">
           <div>
             <h1 className="text-[20px] leading-[28px] text-white">Company</h1>
             <p className="mt-[24px] text-white text-[14px] leading-5">
@@ -67,7 +67,6 @@ const Footer = () => {
               Privacy policy
             </p>
             <p className="mt-[12px] text-white text-[14px] leading-5">Status</p>
-            z
           </div>
           <div>
             <h1 className="text-[20px] leading-[28px] text-white">

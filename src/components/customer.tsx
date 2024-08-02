@@ -1,12 +1,12 @@
 import React from "react";
 import Wrapper from "./wrapper";
-import { logo } from "./our-client";
 import ClientLogo from "./client-logo";
 import Image from "next/image";
+import { logo } from "@/const";
 const Customer = () => {
   return (
     <Wrapper className="bg-[#F5F7FA]">
-      <div className="flex gap-x-[78px]  items-center ">
+      <div className="flex flex-col md:flex-row gap-x-[78px]  items-center ">
         <Image
           src="/customer.svg"
           width={326}
@@ -33,7 +33,7 @@ const Customer = () => {
           <p className="mt-[8px] text-[16px] leading-[24px] ">
             British Dragon Boat Racing Association
           </p>
-          <div className="flex space-x-[35px] mt-8 items-center w-full">
+          <div className="flex flex-col gap-x-[35px] md:flex-row  mt-8 items-center w-full">
             {logo.map((icon) => (
               <ClientLogo image={icon.image} name={icon.name} key={icon.name} />
             ))}
