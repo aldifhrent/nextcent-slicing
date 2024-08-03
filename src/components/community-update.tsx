@@ -1,6 +1,7 @@
 import Wrapper from "./wrapper";
 import { CommunityDetails } from "@/const";
-import CommunityCard from "@/components/community-card";
+import CommunityCard from "@/components/community-update-card";
+import CommunityUpdateCard from "@/components/community-update-card";
 
 const CommunityUpdates = () => {
   return (
@@ -20,10 +21,10 @@ const CommunityUpdates = () => {
         </div>
         <div className="flex flex-col lg:flex-row  justify-between gap-x-6 py-6 gap-y-6 lg:gap-y-0 ">
           {CommunityDetails.map((details) => (
-            <CommunityCard
+            <CommunityUpdateCard
+              key={details.title}
               image={details.image}
               title={details.title}
-              key={details.title}
             />
           ))}
         </div>

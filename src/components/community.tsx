@@ -2,6 +2,7 @@ import React from "react";
 import Wrapper from "@/components/wrapper";
 import Image from "next/image";
 import { CommunityData } from "@/const";
+import CommunityCard from "./community-card";
 
 const Community = () => {
   return (
@@ -15,24 +16,12 @@ const Community = () => {
         </p>
         <div className="grid grid-cols-1 justify-center items-center lg:grid-cols-3 gap-x-[136px] mt-[16px]">
           {CommunityData.map((community) => (
-            <div
+            <CommunityCard
               key={community.title}
-              className="flex flex-col items-center w-[299px] h-[260px] py-[24px] px=[16px] text-center"
-            >
-              <Image
-                src={community.icon}
-                alt={community.title}
-                width={65}
-                height={56}
-              />
-              <h1 className="text-[26px] lg:text-[28px] text-center font-bold leading-[36px] mt-[16px]">
-                {" "}
-                {community.title}
-              </h1>
-              <p className="mt-[8px] text-[16px] lg:text-[18px]">
-                {community.description}
-              </p>
-            </div>
+              title={community.title}
+              icon={community.icon}
+              description={community.description}
+            />
           ))}
         </div>
       </div>
