@@ -6,7 +6,7 @@ import { logo } from "@/const";
 const Customer = () => {
   return (
     <Wrapper className="bg-[#F5F7FA]">
-      <div className="flex flex-col md:flex-row gap-x-[78px]  items-center ">
+      <div className="flex flex-col lg:flex-row gap-x-[78px]  items-center ">
         <Image
           src="/customer.svg"
           width={326}
@@ -33,7 +33,7 @@ const Customer = () => {
           <p className="mt-[8px] text-[16px] leading-[24px] ">
             British Dragon Boat Racing Association
           </p>
-          <div className="flex flex-col gap-x-[35px] md:flex-row  mt-8 items-center w-full">
+          <div className="grid grid-cols-4 lg:grid-cols-8 gap-x-[35px] md:flex-row  mt-8 items-center w-full">
             {logo.map((icon) => (
               <ClientLogo image={icon.image} name={icon.name} key={icon.name} />
             ))}

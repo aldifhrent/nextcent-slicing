@@ -7,10 +7,10 @@ const CommunityUpdates = () => {
     <Wrapper className="mt-12 mb-[96px] ">
       <div className="flex flex-col items-center px-[165px] gap-x-[16px]">
         <div className="">
-          <h1 className="text-[36px] font-semibold leading-[44px] text-center text-[#4D4D4D]">
+          <h1 className="text-[32px] lg:text-[36px] font-semibold leading-[44px] text-center text-[#4D4D4D]">
             Caring is the new marketing
           </h1>
-          <p className="mt-[8px] text-center text-[16px] leading-6 text-[#717171]">
+          <p className="mt-[8px] text-center text-[14px] lg:text-[16px] leading-6 text-[#717171] text-nowrap">
             The Nexcent blog is the best place to read about the latest
             membership insights,
             <br /> trends and more. See who&apos;s joining the community, read

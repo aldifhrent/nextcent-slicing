@@ -45,7 +45,7 @@ const Header = () => {
           </div>
         </nav>
         <button
-          className="fixed  right-[105px] z-50 lg:hidden"
+          className="right-[105px] z-50 lg:hidden"
           onClick={handleOpen}
           aria-label="Toggle menu"
         >

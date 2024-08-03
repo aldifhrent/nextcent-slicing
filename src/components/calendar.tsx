@@ -4,9 +4,9 @@ import Wrapper from "@/components/wrapper";
 const Calendar = () => {
   return (
     <Wrapper className="mt-[48px] mb-[48px]">
-      <div className="flex flex-col items-center md:flex-row justify-between gap-x-[49px] gap-y-[24px] md:gap-y-0">
+      <div className="flex flex-col items-center lg:flex-row justify-between gap-x-[49px] gap-y-[24px] md:gap-y-0">
         <Image src="/calendar.svg" width={441} height={433} alt="Calendar" />
-        <div>
+        <div className="mt-8 lg:mt-0">
           <h1 className="text-[36px] text-[#4D4D4D] leading-[44px] font-semibold text-center lg:text-start">
             {" "}
             How to design your site footer like <br />
